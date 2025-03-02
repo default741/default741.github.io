@@ -16,6 +16,9 @@ baseurl: ""
 url: "https://default741.github.io/"
 
 github_username: default741
+contact_note: >
+  Best way to reach me is via E-mail.
+
 max_width: 930px
 icon: "site_icon.png"
 keywords: abdemanaaf-ghadiali, academic-website, portfolio-website, quantum-computing, machine-learning, gwu, george-washington-university

@@ -36,5 +36,11 @@ layout: default
         {% endif %}
 
         <div class="clearfix">{{ content }}</div>
+
+        <div class="social">
+          <div class="contact-icons">{% include social.liquid %}</div>
+
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
       </article>
     </div>
