@@ -26,11 +26,22 @@ keywords: abdemanaaf-ghadiali, academic-website, portfolio-website, quantum-comp
 # Build Settings
 sass:
   sass_dir: _sass
+  style: compressed
 
 include: ["_pages"]
 
+plugins:
+  - jekyll-get-json
+  - jekyll-toc
+
 kramdown:
   input: GFM
+
+  defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
 
 third_party_libraries:
   download: false
@@ -57,6 +68,10 @@ third_party_libraries:
   google_fonts:
     url:
       fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+
+jekyll_get_json:
+  - data: resume
+    json: assets/json/resume.json
 
 jsonresume:
   - basics
