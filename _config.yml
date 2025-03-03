@@ -1,47 +1,126 @@
-# Site Settings
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+
 title: blank
 first_name: Abde Manaaf
 middle_name: Z.
 last_name: Ghadiali
 email: abdemanaaf.ghadiali.1998@gmail.com
+github_username: default741
 
+contact_note: >
+  The most effective way to contact me is via email.
 description: >
-  Personal Portfolio and Blog.
-
+  A personal portfolio and blog featuring a downloadable resume, GitHub repositories, and a bookshelf section showcasing books I have read, along with summaries and my personal insights.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
+lang: en
+icon: site_icon.png
+
+url: https://default741.github.io/
 baseurl: ""
-url: "https://default741.github.io/"
+last_updated: true
+back_to_top: true
 
-github_username: default741
-contact_note: >
-  Best way to reach me is via E-mail.
+# -----------------------------------------------------------------------------
+# Theme
+# -----------------------------------------------------------------------------
 
-max_width: 930px
-icon: "site_icon.png"
-keywords: abdemanaaf-ghadiali, academic-website, portfolio-website, quantum-computing, machine-learning, gwu, george-washington-university
+rss_icon: true
+navbar_fixed: false
+footer_fixed: false
+max_width: 940px
 
-# Build Settings
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+
+blog_name: how-to-be-boring
+blog_description: >
+  A collection of technical articles on Quantum Computing, Machine Learning, and Data Science, along with key academic textbook chapters essential for both graduate and undergraduate studies.
+  Additionally, the section includes reviews and summaries of important research papers and articles.
+permalink: /blog/:year/:title/
+lsi: false
+
+pagination:
+  enabled: true
+
+related_blog_posts:
+  enabled: true
+  max_related: 5
+
+external_sources:
+  - name: medium.com
+    rss_url: https://medium.com/@abdemanaaf.ghadiali.1998/demystifying-the-quantum-part-1-a-dive-into-qubits-and-beyond-79eba5e239a6
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  books:
+    output: true
+  projects:
+    output: true
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+include: ["_pages"]
+exclude:
+  - Gemfile.lock
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-toc
+  - jekyll-link-attributes
+  - fiddle
+  - faraday-retry
+
+defaults:
+- scope:
+    path: "assets"
+  values:
+    sitemap: false
+
 sass:
   sass_dir: _sass
   style: compressed
 
-include: ["_pages"]
+# -----------------------------------------------------------------------------
+# Jekyll Link Attributes
+# -----------------------------------------------------------------------------
 
-plugins:
-  - jekyll-get-json
-  - jekyll-toc
+external_links:
+  enabled: true
+  rel: external nofollow noopener
+  target: _blank
+  exclude:
 
-kramdown:
-  input: GFM
 
-  defaults:
-  - scope:
-      path: "assets"
-    values:
-      sitemap: false
+
+keywords: abdemanaaf-ghadiali, academic-website, portfolio-website, quantum-computing, machine-learning, gwu, george-washington-university
+
+
+
 
 third_party_libraries:
   download: false
