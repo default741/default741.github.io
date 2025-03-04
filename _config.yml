@@ -84,6 +84,7 @@ kramdown:
 
 include: ["_pages"]
 exclude:
+  - vendor
   - Gemfile.lock
   - README.md
 
