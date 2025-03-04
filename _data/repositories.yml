@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - default741
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - default741/link-prediction-with-nasa-ges-dics
+  - default741/new-recommendation-system
+  - default741/ai-text-detection
+  - default741/speak-sense
+  - default741/py-mlxl

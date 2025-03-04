@@ -25,6 +25,8 @@ baseurl: ""
 last_updated: true
 back_to_top: true
 
+keywords: abdemanaaf-ghadiali, academic-website, portfolio-website, quantum-computing, machine-learning, gwu, george-washington-university
+
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
@@ -117,11 +119,15 @@ external_links:
   exclude:
 
 
+# -----------------------------------------------------------------------------
+# Optional Features
+# -----------------------------------------------------------------------------
 
-keywords: abdemanaaf-ghadiali, academic-website, portfolio-website, quantum-computing, machine-learning, gwu, george-washington-university
+enable_darkmode: true
 
-
-
+# -----------------------------------------------------------------------------
+# Library versions
+# -----------------------------------------------------------------------------
 
 third_party_libraries:
   download: false
@@ -148,6 +154,22 @@ third_party_libraries:
   google_fonts:
     url:
       fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+  jquery:
+    integrity:
+      js: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/jquery@{{version}}/dist/jquery.min.js"
+    version: "3.6.0"
+  mermaid:
+    integrity:
+      js: "sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A="
+    url:
+      js: "https://cdn.jsdelivr.net/npm/mermaid@{{version}}/dist/mermaid.min.js"
+    version: "10.7.0"
+
+# -----------------------------------------------------------------------------
+# Get external JSON data
+# -----------------------------------------------------------------------------
 
 jekyll_get_json:
   - data: resume
@@ -157,7 +179,6 @@ jsonresume:
   - basics
   - work
   - education
-  - publications
   - projects
   - volunteer
   - awards
