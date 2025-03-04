@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date: 2015-03-15 16:40:16
+date: 2015-03-15 16:40:16-0400
 description: march & april, looking forward to summer
 tags: formatting links
 categories: jekyll update
