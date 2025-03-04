@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Graph Coloring Using Quantum Circuits
+title: Speak Sense
 description: with background image
 img: /assets/img/graph-coloring.jpg
-importance: 1
-category: Research
+importance: 5
+category: Academic
 related_publications: false
 ---
 

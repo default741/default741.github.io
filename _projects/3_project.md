@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Graph Coloring Using Quantum Circuits
+title: PY-MLXL
 description: with background image
 img: /assets/img/graph-coloring.jpg
-importance: 1
-category: Research
+importance: 3
+category: Personal
 related_publications: false
 ---
 

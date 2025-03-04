@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Graph Coloring Using Quantum Circuits
+title: Quantum-RAM
 description: with background image
 img: /assets/img/graph-coloring.jpg
-importance: 1
+importance: 2
 category: Research
 related_publications: false
 ---
