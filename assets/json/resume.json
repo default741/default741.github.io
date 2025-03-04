@@ -1,38 +1,105 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
-    "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    "name": "Abde Manaaf Z. Ghadiali",
+    "label": "ML Engineer, Data Scientist, Quantum Computing Researcher",
+    "email": "abdemanaaf.ghadiali.1998@gmail.com",
+    "phone": "+1 (703) 216-0963",
+    "github": "https://github.com/default741",
+    "linkedin": "https://www.linkedin.com/in/abde-manaaf-ghadiali/",
+    "summary": "Built a strong foundation in computer science and machine learning through rigorous coursework, research, and 3+ years of experience, specializing in deep learning, quantum computing, and statistical analysis, while leading projects on AI/ML and recommendation systems.",
+    "location": "2111 Richmond Hwy, Arlington, Virginia, United States, 22202"
   },
+
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "School of Engineering and Applied Sciences, Geroge Washington University",
+      "position": "Graduate Teaching Assistant",
+      "location": "Washington, DC",
+      "startDate": "2024-06-02",
+      "endDate": "Present",
+      "summary": "As a Teaching Assistant, I evaluated coursework, led Java lab sessions, and mentored students in Python, Java, and Software Engineering, fostering an inclusive learning environment while developing innovative teaching strategies.",
+      "highlights": ["CSCI 1012 Introduction to Programming with Python.", "CSCI 1111 Intoduction to Software Development.", "CSCI 2113 Software Engineering."]
+    },
+    {
+      "name": "Thoucentric (A Xoriant Company)",
+      "position": "Senior ML Engineer and Data Scientist",
+      "location": "Bengaluru, India",
+      "startDate": "2020-07-01",
+      "endDate": "2023-08-04",
+      "summary": "Developed AI-driven solutions to optimize manufacturing, including a thermodynamics-based recommendation engine reducing vehicle painting defects by 40%, ML pipelines for fault detection and forecasting, and scalable deployments on GCP and Databricks.",
+      "highlights": ["Innovation of Thermodynamics based Recommendation System.", "Two-Year Consecutive Organizational Award Winner for Best Performance."]
+    },
+    {
+      "name": "Thoucentric (A Xoriant Company)",
+      "position": "Data Analyst Intern",
+      "location": "Bengaluru, India",
+      "startDate": "2020-01-06",
+      "endDate": "2020-06-30",
+      "summary": "Designed a data preparation pipeline using SQL and Python to enhance model efficiency and quality, and developed ML/DL models achieving up to 93% accuracy in detecting automotive painting defects.",
+      "highlights": ["Data Analysis and Analytics Engineer."]
     }
   ],
+
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "Scikit-Learn",
+        "ImbLearn",
+        "MLOps",
+        "Django",
+        "FastAPI",
+        "Hyper-Parameter Tuning and Optimization"
+      ]
+    },
+    {
+      "name": "Deep Learning",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "Transformers",
+        "HuggingFace",
+        "FastAPI",
+        "Foundational Models",
+        "Experiment Design",
+        "Paper Replicating and Implementation"
+      ]
+    },
+    {
+      "name": "Data Science",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "SciPy",
+        "Matplotlib",
+        "Seaborn",
+        "Plotly",
+        "Statistical Analysis"
+      ]
+    },
+    {
+      "name": "Quantum Computing",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Python",
+        "Qiskit",
+        "IBM Composer",
+        "IBM Runtime Services",
+        "Linear Algebra",
+        "Quantum Machine Learning",
+        "Quantum-RAM",
+        "Grover's Search",
+        "Quantum Gates and Circuits"
+      ]
+    }
+  ],
+
   "volunteer": [
     {
       "organization": "People's Climate March",
@@ -111,21 +178,7 @@
       "icon": "fa-solid fa-clipboard-check"
     }
   ],
-  "skills": [
-    {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
+
   "languages": [
     {
       "language": "German",
