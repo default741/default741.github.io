@@ -5,19 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <title>
-    {% if site.title == 'blank' %}
-      {% capture title %}{{ author_name }}{% endcapture %}
-    {% else %}
-      {% capture title %}{{ site.title }}{% endcapture %}
-    {% endif %}
-    {% if page.url == '/blog/index.html' %}
+    {% capture title %}{{ author_name }}{% endcapture %}
+
+    {% if page.title != 'blank' and page.url != '/' %}
       {{ page.title }} | {{ title }}
-    {% elsif page.title != 'blank' and page.url != '/' %}
-      {% if page.title == null or page.title == '' %}
-        {{ page.date | date: '%Y' }} | {{ title }}
-      {% else %}
-        {{ page.title }} | {{ title }}
-      {% endif %}
     {% else %}
       {{ title }}
     {% endif %}
@@ -31,18 +22,11 @@
 
   <script type="application/ld+json">
     {
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}"
-        },
+        "author":{"@type": "Person", "name": "{{ author_name }}"},
         "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
+        "@type": "WebSite",
         "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
         "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks }},
-        {% endif %}
         "name": "{{ author_name }}",
         "@context": "https://schema.org"
     }
